@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whatsapp Clone</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">	
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+	<div class="row main_row">
+	<div class="col-md-4 chat-container">
+		<div  class="overlay1 overlay2">
+			<div class="row d-flex align-items-end" style="height: 20%;background-color: #00bfa5">
+				
+				<div class="col-3" id="backarrow">
+				<a href=""><i class="fas fa-long-arrow-alt-left fa-2x" style="color: white"></i></a>	
+				</div>
+				<div class="col-9">
+					<span><h5 style="color: white">Profile</h5></span>
+				</div>
+				
+			</div>
+			<div class="row" style="height: 35%;background-color: #e6ffe6">
+				<div class="dropdown d-flex justify-content-center align-items-center">
+					<img src="pp.jpg" class="dropdown-toggle img-rounded" data-toggle="dropdown" style="width: 50%;height: 80%;border-radius: 50%">
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  			  				<a class="dropdown-item" href="#">View Photo</a>
+  			  				<a class="dropdown-item" href="#">Take Photo</a>
+  			  				<a class="dropdown-item" href="#">Upload Photo</a>
+  			  				<a class="dropdown-item" href="#">Remove Photo</a>
+  					</div>
+
+				</div>
+			
+			</div>
+			<div class="row d-flex flex-column" style="height: 44%; background-color:#e6ffe6 ">
+				<div class="row" style="height: 30%; width: 100%">
+					<div class="col-12">
+						Your Name
+					</div>
+					<div class="row col-12">
+						
+						
+							<div class="input-group">
+            				
+        					<input title="Type a message" type="text" class="form-control" placeholder="Ayush Jaiswal">
+        					<span class="input-group-btn">
+        						<button class="btn btn-default" type="button" style="height: 100%">
+        							<i class="fas fa-pen"></i>
+        						</button>
+        					</span>
+      					</div>
+						
+						
+						
+					</div>
+				</div>
+				<div class="row" style="height: 30%; width: 100%">
+					<p style="font-size: 12px;padding:15px">This is not or username or pin.This name will be visible to your whatspp contacts.</p>
+				</div>
+				<div class="row" style="height: 30%; width: 100%">
+					<div class="col-12">
+						About
+					</div>
+					<div class="row col-12">
+						
+						<div class="input-group">
+            				
+        					<input title="Type a message" type="text" class="form-control" placeholder="Available">
+        					<span class="input-group-btn">
+        						<button class="btn btn-default" type="button" style="height: 100%">
+        							<i class="fas fa-pen"></i>
+        						</button>
+        					</span>
+      					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+					
+					
+						
+
+
+
+		<div style="height: 100%;" id="chatlist" class="chatlist1">
+
+				<ul class="nav nav-pills nav-stacked d-flex flex-column flex-nowrap" style="height: 100%;overflow-y: scroll;">
+				<li class="nav-item border chat">
+					<div class="row border" style="width: 100%; background-color: #d9d9d9">
+
+							<div class="col" id="profilechange">
+								<a href="#">
+      							<img src="pp.jpg" class="img-rounded img-fluid" style="width: 50px; height: 50px; border-radius: 50%;">
+      							</a>
+							</div>
+
+							<div class="col">
+							
+
+
+
+							</div>
+						<div class="col">
+							<span class="d-flex justify-content-end">
+								<div style="padding: 5px">
+									<a href="#"><i class="fas fa-sync fa-lg" title="Status"></i></a>
+								</div>                       
+								
+								<div style="padding: 5px">
+								<a href="#"><i class="far fa-comment-alt fa-lg" title="New Chat"></i></a>
+								</div>	
+
+								<div style="padding: 5px">
+								<a href="#"><i class="fas fa-ellipsis-v fa-lg" title="Menu"></i></a>
+								</div>
+							</span>
+						</div>
+					</div>
+
+				</li>
+
+
+				 <li class="nav-item border chat" style="background-color: #9de1fe">
+				 	<a class="nav-link" href="#">
+						<div class="row">
+							<div class="col-2" style="padding-top: 10px">
+								<i class="far fa-bell fa-lg"></i>
+							</div>
+							<div class="col-10">
+								<name style="color: black">Get Notified of new Messages</name><br>
+						<small style="color: black">Turn on desktop notifications</small>
+							</div>
+						</div>
+					</a>
+				 </li>
+
+
+
+
+					<li class="nav-item border chat">
+						<div class="searchbox border-white bg-light" >
+            			<div class="input-group">
+            				<span class="input-group-btn">
+            					<button class="btn btn-default " type="button">
+            					<i class="fas fa-search"></i>
+          						</button>
+       			 			</span>
+        					<input title="Search or start new chat" type="text" class="form-control" placeholder="Search or start new chat">
+        
+      					</div>
+
+    				
+					</div>
+					</li>
+				
+
+					
+    				
+    				<li class="nav-item border chat" id="chatclick">
+      					<a class="nav-link" href="#">
+      						<div class="row">
+      							<div class="col-xs-3">
+      								<img src="vivek.jpg" class="img-rounded img-fluid" style="width: 50px; height: 50px; border-radius: 50%">
+      						 	</div>
+      						 	<div class="col">
+      						 		<p style="margin-bottom: 0">
+      						 	<name>Vivek</name>
+      						 	<span class="time">08: 30 PM</span>	
+      						 	</p>
+      						 		<p><small>Have you sent the mail??</small><span class="unseen">3</span></p>
+      						 	</div>
+      						</div>
+      					</a>
+      				</li>	
+
+      				
+
+
+      				
+      				<li class="nav-item border chat">
+      					<a class="nav-link" href="#">
+      						<div class="row">
+      							<div class="col-xs-3">
+      								<img src="praneet.jpg" class="img-rounded" style="width: 50px; height: 50px; border-radius: 50%">
+      						 	</div>
+      						 	<div class="col">
+      						 		<p style="margin-bottom: 0; width: 100%">
+      						 			 <name>Praneet</name>
+      						 			 <span class="time">08: 06 AM</span>
+      						 		</p>
+      						 		<p><small>Movie dekhne chal raha hai bhai</small><span class="unseen">2</span></p>
+
+      						 	</div>
+      						</div>
+      					</a>	  	
+    				</li>
+    				<li class="nav-item border chat">
+      					<a class="nav-link" href="#">
+      						<div class="row">
+      							<div class="col-xs-3">
+      								<img src="prateek.jpg" class="img-rounded img-fluid" style="width: 50px; height: 50px; border-radius: 50%">
+      						 	</div>
+      						 	<div class="col">
+      						 		<p style="margin-bottom: 0">
+      						 		<name>Prateek</name>
+      						 		<span class="time">07: 45 PM</span>
+      						 	</p>
+      						 		<p><small>kal milte hai phir</small><span class="unseen">4</span></p>
+      						 	</div>
+      						</div>
+      					</a>	  	
+    				</li>
+    				<li class="nav-item border chat">
+      					<a class="nav-link" href="#">
+      						<div class="row">
+      							<div class="col-xs-3">
+      								<img src="sanjubhai.jpg" class="img-rounded img-fluid" style="width: 50px; height: 50px; border-radius: 50%">
+      						 	</div>
+      						 	<div class="col">
+      						 		<p style="margin-bottom: 0">
+      						 		 	<name>Sanju Bhai</name>
+      						 			<span class="time">07: 42 PM</span>   
+      						 	   </p>
+      						 		<p><small>Kya haal hai bhai</small></p>
+      						 	</div>
+      						</div>
+      					</a>	  	
+    				</li>
+    				<li class="nav-item border chat">
+      					<a class="nav-link" href="#">
+      						<div class="row">
+      							<div class="col-xs-3">
+      								<img src="ishansingh.jpg" class="img-rounded img-fluid" style="width: 50px; height: 50px; border-radius: 50%">
+      						 	</div>
+      						 	<div class="col">
+      						 	<p style="margin-bottom: 0">
+      						 			<name>Ishan Singh</name>
+      						 			<span class="time">05: 55 PM</span> 	
+      						 	</p>
+      						 		<p><small>Where are you these days??</small></p>
+      						 	</div>
+      						</div>
+      					</a>	  	
+    				</li>
+    				 <li class="nav-item border rounded chat">
+      					<a class="nav-link" href="#">
+      						<div class="row">
+      							<div class="col-xs-3">
+      								<img src="bhanu.jpg" class="img-rounded" style="width: 50px; height: 50px; border-radius: 50%">
+      						 	</div>
+      						 	<div class="col">
+      						 		<p style="margin-bottom: 0">
+      						 	<name>Bhanu</name>	
+      						 	<span class="time">05: 21 PM</span> 
+
+      						 	</p>
+      						 		<p><small>Please add him too</small></p>
+      						 	</div>
+      						</div>
+      					</a>	  	
+    				</li> 
+    				<li class="nav-item border chat">
+      					<a class="nav-link" href="#">
+      						<div class="row">
+      							<div class="col-xs-3">
+      								<img src="raghav.jpg" class="img-rounded" style="width: 50px; height: 50px; border-radius: 50%">
+      						 	</div>
+      						 	<div class="col">
+      						 		<p style="margin-bottom: 0">
+      						 	<name>Raghav</name>	
+      						 	<span class="time">05: 01 PM</span> 
+      						 	</p>
+      						 		<p><small>Congratulations Bro !!!</small></p>
+      						 	</div>
+      						</div>
+      					</a>	  	
+    				</li>
+    				 
+    				
+  				</ul>
+  			</div>
+  		</div>
+				 
+		<div class="col-md-8 column_second">
+        	<div id="chatbox" class="chatbox1">
+					<div class="row" style="background-color:#d9d9d9;height: 8%">
+						<div class="col-2" style="padding-right: 0">
+							<img src="vivek.jpg" class="img-rounded" style="width: 60px; height: 60px; border-radius: 50%; padding: 8px">
+						</div>
+						<div class="col-6" style="padding-left: 0">
+							<p style="margin-bottom: 0;font-weight: bold;">Vivek</p>
+							<small>Last seen today at 1:00 pm</small>
+						</div>
+						<div class="col-4 d-flex justify-content-end">
+							<i class="fas fa-search" style="padding-top: 10px;padding-right: 20px"></i>
+							<i class="fas fa-paperclip" style="padding-top: 10px; padding-right: 20px"></i>
+							<i class="fas fa-ellipsis-v fa-lg" style="padding-top: 10px;padding-right: 20px"></i>		
+						</div>
+					</div>
+
+
+			<div class="row" style="background-image: url(chatbg.jpg);background-repeat: no-repeat;background-size: 100% 100%;display: block;overflow-y: scroll; height: 85%">
+					
+					<p style="text-align: center;">show previous messages</p>
+					<div class="row" style="padding: 10px">
+							<div class="received">
+									<div>
+										my name is ayush 	my name is ayush 	my name is ayush
+									</div>
+									<span class="d-flex justify-content-end" style="font-size: 10px">
+									01:30 PM
+									</span>
+							</div>
+					</div>
+					
+					<div class="row d-flex justify-content-end" style="padding: 10px">
+							<div class="sent">
+								<div>
+									my name is ayush 	my name is ayush 	my name is ayush
+								</div>
+								<span class="d-flex justify-content-end" style="font-size: 10px">
+								01:30 PM
+								</span>
+							</div>
+					</div>
+
+					<div class="row" style="padding: 10px">
+							<div class="received">
+									<div>
+										my name is ayush 	my name is ayush 	my name is ayush
+									</div>
+									<span class="d-flex justify-content-end" style="font-size: 10px">
+									01:30 PM
+									</span>
+							</div>
+					</div>
+					
+					<div class="row d-flex justify-content-end" style="padding: 10px">
+							<div class="sent">
+								<div>
+									my name is ayush 	my name is ayush 	my name is ayush
+								</div>
+								<span class="d-flex justify-content-end" style="font-size: 10px">
+								01:30 PM
+								</span>
+							</div>
+					</div>
+
+					<div class="row" style="padding: 10px">
+							<div class="received">
+									<div>
+										my name is ayush 	my name is ayush 	my name is ayush
+									</div>
+									<span class="d-flex justify-content-end" style="font-size: 10px">
+									01:30 PM
+									</span>
+							</div>
+					</div>
+					
+					<div class="row d-flex justify-content-end" style="padding: 10px">
+							<div class="sent">
+								<div>
+									my name is ayush 	my name is ayush 	my name is ayush
+								</div>
+								<span class="d-flex justify-content-end" style="font-size: 10px">
+								01:30 PM
+								</span>
+							</div>
+					</div>
+
+
+					<div class="row" style="padding: 10px">
+							<div class="received">
+									<div>
+										my name is ayush 	my name is ayush 	my name is ayush
+									</div>
+									<span class="d-flex justify-content-end" style="font-size: 10px">
+									01:30 PM
+									</span>
+							</div>
+					</div>
+					
+					<div class="row d-flex justify-content-end">
+							<div class="sent">
+								<div>
+									my name is ayush 	my name is ayush 	my name is ayush
+								</div>
+								<span class="d-flex justify-content-end" style="font-size: 10px">
+								01:30 PM
+								</span>
+							</div>
+					</div>
+
+
+					<div class="row">
+							<div class="received">
+									<div>
+										my name is ayush 	my name is ayush 	my name is ayush
+									</div>
+									<span class="d-flex justify-content-end" style="font-size: 10px">
+									01:30 PM
+									</span>
+							</div>
+					</div>
+					
+					<div class="row d-flex justify-content-end">
+							<div class="sent">
+								<div>
+									my name is ayush 	my name is ayush 	my name is ayush
+								</div>
+								<span class="d-flex justify-content-end" style="font-size: 10px">
+								01:30 PM
+								</span>
+							</div>
+					</div>
+			</div>
+
+			<div class="row" style="height: 7%">
+					
+            			<div class="input-group">
+            				<span class="input-group-btn">
+            					<button class="btn btn-default " type="button" style="height: 100%">
+            					<i class="far fa-smile"></i>
+          						</button>
+       			 			</span>
+        					<input title="Type a message" type="text" class="form-control" placeholder="Type a message">
+        					<span class="input-group-btn">
+        						<button class="btn btn-default" type="button" style="height: 100%">
+        							<i class="fas fa-microphone"></i>
+        						</button>
+        					</span>
+      					</div>
+			</div>
+		</div>
+	</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script type="text/javascript">
+var chatbox=document.getElementById("chatbox");
+var chatclick=document.getElementById("chatclick");
+var profilechange=document.getElementById("profilechange");
+var overlay=document.getElementsByClassName("overlay1");
+var chatlist=document.getElementById("chatlist");
+var backarrow=document.getElementById("backarrow");
+
+
+chatclick.addEventListener("click",function(){
+chatbox.classList.toggle("chatbox1");
+chatbox.classList.toggle("togg");
+
+
+});
+profilechange.addEventListener("click",function(){
+
+overlay[0].classList.toggle("overlay3");
+chatlist.classList.toggle("chatlist2");
+});
+
+backarrow.addEventListener("click",function(){
+chatlist.classList.toggle("chatlist2");
+overlay[0].classList.toggle("overlay3");
+});
+
+
+
+</script>
+</body>
+
+</html>
